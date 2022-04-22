@@ -1,0 +1,38 @@
+.inputWrapper {
+    border: solid #02A9F7 2px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "name   nameInput"
+        "ip     ipInput"
+        "subnet subnetInput";
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #d4f0fc;
+}
+
+.name {
+    grid-area: name;
+}
+
+.nameInput {
+    grid-area: nameInput;
+}
+
+.ip {
+    grid-area: ip;
+}
+
+.ipInput {
+    grid-area: ipInput;
+}
+
+.subnet {
+    grid-area: subnet;
+}
+
+.subnetInput {
+    grid-area: subnetInput;
+}

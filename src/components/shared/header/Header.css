@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    color: #01303f;
+    height: 80px;
+}
+
+.leftHeader {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #02A9F7;
+    font-size: 1.8em;
+    padding-left: 40px;
+
+}
+
+.rightHeader {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.rightHeader > a:visited {
+    color: #01303f;
+    text-decoration: none;
+}
+
+.rightHeader > a {
+    text-decoration: none;
+}
+
+.inactive {
+    color: #01303f;
+}
+
+.inactive:hover {
+    color: #02A9F7;
+}
+
+.active {
+    color: #02A9F7;
+}
+
+
+.prefix {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.match {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#bar {
+    height: 5px;
+    width: 70px;
+    background-color: #02A9F7;
+}

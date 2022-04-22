@@ -1,0 +1,67 @@
+.homeWrapper {
+    display: flex;
+}
+
+.leftSection {
+    flex: 1;
+    text-align: center;
+}
+
+.middleSection {
+    flex: 1;
+    text-align: center;
+}
+
+.rightSection {
+    flex: 1;
+}
+
+.addBtn {
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #d4f0fc;
+    border-color: #02A9F7;
+    margin-top: 10px;
+}
+
+.inputWrapper {
+    border: solid #02A9F7 2px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "name   nameInput"
+        "ip     ipInput"
+        "subnet subnetInput";
+    gap: 10px;
+    padding: 10px;
+    background-color: #d4f0fc;
+    margin-bottom: 10px;
+}
+
+.name {
+    grid-area: name;
+}
+
+.nameInput {
+    grid-area: nameInput;
+}
+
+.ip {
+    grid-area: ip;
+}
+
+.ipInput {
+    grid-area: ipInput;
+}
+
+.subnet {
+    grid-area: subnet;
+}
+
+.subnetInput {
+    grid-area: subnetInput;
+}
