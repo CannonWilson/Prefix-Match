@@ -107,7 +107,7 @@ function Home() {
                 </div>
 
                 <div className="rightSection">
-                    output
+                    <div><strong>Output</strong></div>
                 </div>
 
             </div>
