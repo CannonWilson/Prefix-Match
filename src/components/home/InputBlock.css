@@ -1,4 +1,21 @@
-.inputWrapper {
+.minusButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #f75402;
+    color: white;
+    font-weight: bold;
+    border: #a13500 solid 2px;
+    transform: translate(-50%, -50%);
+    margin-left: 30vw;
+    position: absolute;
+}
+
+/* .inputWrapper {
     border: solid #02A9F7 2px;
     border-radius: 10px;
     display: grid;
@@ -35,4 +52,4 @@
 
 .subnetInput {
     grid-area: subnetInput;
-}
+} */

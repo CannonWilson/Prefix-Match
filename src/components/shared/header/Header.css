@@ -1,6 +1,5 @@
 header {
     display: flex;
-    color: #01303f;
     height: 80px;
 }
 
@@ -9,7 +8,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
-    color: #02A9F7;
+    color: var(--light-blue);
     font-size: 1.8em;
     padding-left: 40px;
 
@@ -23,12 +22,17 @@ header {
     font-weight: bold;
 }
 
-.rightHeader > a:visited {
-    color: #01303f;
+.rightHeader a:visited{
+    color: var(--dark-navy);
     text-decoration: none;
 }
 
-.rightHeader > a {
+.leftHeader a:visited {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.rightHeader a, .leftHeader a{
     text-decoration: none;
 }
 
@@ -37,11 +41,19 @@ header {
 }
 
 .inactive:hover {
-    color: #02A9F7;
+    color: var(--light-blue);
 }
 
 .active {
-    color: #02A9F7;
+    color: var(--light-blue) !important;
+}
+
+.calcWrapper, .aboutWrapper, .apiWrapper {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -55,8 +67,14 @@ header {
     font-style: normal;
 }
 
-#bar {
-    height: 5px;
+.box {
+    background-color: white;
     width: 70px;
-    background-color: #02A9F7;
+    margin-top: 10px;
+    height: 7px;
+    border-radius: 2px;
+}
+
+.activeBox {
+    background-color: var(--light-blue);
 }

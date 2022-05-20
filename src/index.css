@@ -7,3 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #01303f;
 }
+
+:root {
+  --light-blue: #02A9F7;
+  --dark-navy: #01303f;
+}

@@ -1,7 +1,7 @@
 import Header from "../shared/header/Header";
 import "./Home.css"
 import {useState} from "react";
-// import InputBlock from "./InputBlock";
+import InputBlock from "./InputBlock";
 
 function Home() {
 
@@ -10,7 +10,7 @@ function Home() {
     const [output, setOutput] = useState([])
 
     function inputBtnPressed() {
-        if (counter < 16) { // Only allow for 16 input blocks
+        if (input.length <= 16) { // Only allow for 16 input blocks
             setInput([...input, counter])
             setCounter(counter+1)
         }
@@ -32,6 +32,10 @@ function Home() {
         setUseCidr(!useCidr)
         document.getElementById('cidrCheck').input.checked = useCidr.toString();
     }
+    
+    function MinusButtonClicked(itemVal) {
+        setInput(input.filter(item => item !== itemVal))
+    }
 
 
     return (
@@ -42,12 +46,7 @@ function Home() {
                 <div className="leftSection">
                     <h4>Click on the plus button below to add incoming packets.</h4>
                     {input.map( (item) =>
-
-                        <div className="inputWrapper" key={input.indexOf(item)}>
-                            <div className="ip">Destination IP address:</div>
-                            <input className="ipInput" placeholder="192.168.0.1" />
-                        </div>
-
+                        <InputBlock key={item} itemVal={item} MinusButtonClicked={MinusButtonClicked} />
                     )}
 
                     <button onClick={inputBtnPressed} className="addBtn">+</button>

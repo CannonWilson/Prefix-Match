@@ -1,19 +1,28 @@
+:root {
+    --main-padding: 20px;
+    --main-sections-padding: 0 20px;
+}
+
 .homeWrapper {
     display: flex;
+    padding: var(--main-padding);
 }
 
 .leftSection {
     flex: 1;
     text-align: center;
+    padding: var(--main-sections-padding);
 }
 
 .middleSection {
     flex: 1;
     text-align: center;
+    padding: var(--main-sections-padding);
 }
 
 .rightSection {
     flex: 1;
+    padding: var(--main-sections-padding);
 }
 
 .addBtn {
